@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/liMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A8DCB3"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="0"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:text="@string/rem"
+        android:textAlignment="textStart"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="0"
+        android:paddingTop="10dp"
+        android:paddingBottom="20dp"
+        android:text="@string/pow"
+        android:textAlignment="textStart"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:ems="15"
+        android:hint="@string/num1"
+        android:inputType="numberDecimal"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:ems="15"
+        android:hint="@string/num2"
+        android:inputType="numberDecimal"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/operator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:ems="15"
+        android:hint="@string/op"
+        android:inputType="text"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/calcu_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0"
+        android:text="@string/calulate" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="0"
+        android:text="@string/result"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:gravity="bottom"
+        android:text="@string/manas"
+        android:textColor="#FF0000"
+        android:textSize="10sp"
+        android:textStyle="bold|italic" />
+
+</LinearLayout>

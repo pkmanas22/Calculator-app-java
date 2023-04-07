@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="rem">1. For finding remainder - use &quot; % &quot;</string>
+    <string name="pow">2. For Calculating power of a number, Enter number in first place, power in 2nd place - use &quot; ^ &quot;</string>
+    <string name="num1">Enter first number</string>
+    <string name="num2">Enter Second Number</string>
+    <string name="op">Enter the operator (+,-,/,*,^,%)</string>
+    <string name="calulate">Calculate now</string>
+    <string name="result">Result</string>
+    <string name="manas">made by Manas</string>
+</resources>
