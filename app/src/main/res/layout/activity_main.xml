@@ -47,16 +47,6 @@
         android:textStyle="italic" />
 
     <EditText
-        android:id="@+id/num2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="0"
-        android:ems="15"
-        android:hint="@string/num2"
-        android:inputType="numberDecimal"
-        android:textStyle="italic" />
-
-    <EditText
         android:id="@+id/operator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -64,6 +54,16 @@
         android:ems="15"
         android:hint="@string/op"
         android:inputType="text"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:ems="15"
+        android:hint="@string/num2"
+        android:inputType="numberDecimal"
         android:textStyle="italic" />
 
     <Button
