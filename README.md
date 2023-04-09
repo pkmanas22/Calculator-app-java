@@ -1,5 +1,8 @@
 # Calculator
 Simple Calculator
+
+https://github.com/pkmanas22/Calculator/blob/master/app/src/main/java/com/example/calculator/MainActivity.java
+https://github.com/pkmanas22/Calculator/blob/master/app/src/main/res/layout/activity_main.xml
 <table>
   <tr>
     <td><img src="https://user-images.githubusercontent.com/125083715/230659862-bc488b0c-e3c3-4ed8-a8b1-3828a8480b28.png" alt="Image 1"></td>
