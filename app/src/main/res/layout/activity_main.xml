@@ -10,6 +10,7 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <!-- First text view for 'Reminder' -->
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
@@ -23,6 +24,7 @@
         android:textAlignment="textStart"
         android:textStyle="bold" />
 
+    <!-- Second text view for 'Power Calculation' -->
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
@@ -36,6 +38,7 @@
         android:textAlignment="textStart"
         android:textStyle="bold" />
 
+    <!-- Edit text for first number -->
     <EditText
         android:id="@+id/num1"
         android:layout_width="wrap_content"
@@ -46,6 +49,7 @@
         android:inputType="numberDecimal"
         android:textStyle="italic" />
 
+    <!-- Edit text for operator -->
     <EditText
         android:id="@+id/operator"
         android:layout_width="wrap_content"
@@ -56,6 +60,7 @@
         android:inputType="text"
         android:textStyle="italic" />
 
+    <!-- Edit text for second number -->
     <EditText
         android:id="@+id/num2"
         android:layout_width="wrap_content"
@@ -66,6 +71,7 @@
         android:inputType="numberDecimal"
         android:textStyle="italic" />
 
+    <!-- Button for calculation -->
     <Button
         android:id="@+id/calcu_button"
         android:layout_width="wrap_content"
@@ -74,6 +80,7 @@
         android:layout_weight="0"
         android:text="@string/calulate" />
 
+    <!-- Text view to display result -->
     <TextView
         android:id="@+id/result"
         android:layout_width="wrap_content"
@@ -84,6 +91,7 @@
         android:textSize="24sp"
         android:textStyle="bold|italic" />
 
+    <!-- Text view for author name -->
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"

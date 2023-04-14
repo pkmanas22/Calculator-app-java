@@ -16,11 +16,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        EditText num1,num2,operator;
+        // declare variables for user input, button click, and result display
+        EditText num1, num2, operator;
         Button calcu_button;
         TextView result;
         LinearLayout liMain;
 
+        // initialize variables with views from the layout file
         num1 = findViewById(R.id.num1);
         num2 = findViewById(R.id.num2);
         operator = findViewById(R.id.operator);
@@ -28,9 +30,11 @@ public class MainActivity extends AppCompatActivity {
         result = findViewById(R.id.result);
         liMain = findViewById(R.id.liMain);
 
+        // perform arithmetic operation based on operator chosen by user
         calcu_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // get user input values as doubles and operator as a string
                 double n1 = Double.parseDouble(num1.getText().toString());
                 double n2 = Double.parseDouble(num2.getText().toString());
                 String ope = operator.getText().toString();
@@ -38,26 +42,32 @@ public class MainActivity extends AppCompatActivity {
 
                 double ans = 0;
                 switch (op){
+                    // perform addition
                     case '+':{
                         result.setText(n1 + " + " + n2 + " = " + (n1+n2));
                         break;
                     }
+                    // perform subtraction
                     case '-':{
                         result.setText(n1 + " - " + n2 + " = " + (n1-n2));
                         break;
                     }
+                    // perform multiplication
                     case '*':{
                         result.setText(n1 + " * " + n2 + " = " + (n1*n2));
                         break;
                     }
+                    // perform modulus
                     case '%':{
                         result.setText(n1 + " % " + n2 + " = " + (n1%n2));
                         break;
                     }
+                    // perform exponentiation
                     case '^':{
                         result.setText(n1 + " ^ " + n2 + " = " + Math.pow(n1,n2));
                         break;
                     }
+                    // perform division and check for division by zero
                     case '/':{
                         if (n2 != 0) {
                             ans = n1 / n2;
@@ -67,6 +77,7 @@ public class MainActivity extends AppCompatActivity {
                         }
                         break;
                     }
+                    // default case if operator entered by user is not recognized
                     default:
                         result.setText("Error!! Please enter valid operator");
                 }
